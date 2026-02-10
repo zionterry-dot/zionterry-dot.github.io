@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Shopping Cart - ShopAway</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="https://uploads.onecompiler.io/44ctvv36b/44ctw5wwb/download.jpeg" alt="ShopAway Logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Continue Shopping</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Your Shopping Cart</h1>
+    <section id="cart-items"></section>
+    <h3 id="total-price">Total: $0.00</h3>
+
+    <section id="checkout-section">
+      <h2>Checkout</h2>
+      <form id="checkout-form">
+        <label for="cc-number">
+          Credit Card Number:
+          <input 
+            type="text" 
+            id="cc-number" 
+            name="cc-number" 
+            required 
+            placeholder="1234 5678 9012 3456"
+            maxlength="19"
+            pattern="[\d\s]{13,19}"
+            title="Enter numbers only, between 13 and 19 digits"
+          />
+        </label>
+        <br />
+        <button type="submit">Buy Now</button>
+      </form>
+      <p id="checkout-message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ShopAway. All rights reserved.</p>
+  </footer>
+
+  <script src="script1.js"></script>
+</body>
+</html>
